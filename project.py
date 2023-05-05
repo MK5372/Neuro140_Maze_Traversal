@@ -298,7 +298,7 @@ class Experience(object):
 
 def qtrain(model, maze, **opt):
     global epsilon
-    n_epoch = opt.get('n_epoch', 30) #original was 15000 -> number of training epochs
+    n_epoch = opt.get('n_epoch', 1000) #original was 15000 -> number of training epochs
     max_memory = opt.get('max_memory', 1000)
     data_size = opt.get('data_size', 50) #number of samples used in each training epoch
     weights_file = opt.get('weights_file', "")
